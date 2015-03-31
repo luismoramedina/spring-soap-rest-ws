@@ -13,12 +13,11 @@
           p:messageSender-ref="messageSender">
         <constructor-arg ref="messageFactory"/>
 
-        <!--        <property name="interceptors">
-                    <list>
-                        <bean class="org.demo.AnInterceptor" />
-                    </list>
-                </property>
-        -->
+        <property name="interceptors">
+            <list>
+                <bean class="org.test.ws.soap.InputOutputInterceptor"/>
+            </list>
+        </property>
     </bean>
 
     <bean

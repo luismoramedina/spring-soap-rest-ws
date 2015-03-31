@@ -28,7 +28,7 @@ public class WebservicesConsumerController {
     }
 
     public String callWebService() {
-        System.out.println("Recibida petición");
+        System.out.println("Recibida peticion");
 
         Translate requestPayload = new Translate();
         requestPayload.setLanguageMode("EnglishTOSpanish");
