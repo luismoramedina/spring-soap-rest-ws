@@ -9,7 +9,7 @@
     <bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate"
           p:marshaller-ref="jaxbMarshaller"
           p:unmarshaller-ref="jaxbMarshaller"
-          p:defaultUri="${translateService.url}"
+          p:defaultUri="${translateService.url:http://www.webservicex.net/TranslateService.asmx}"
           p:messageSender-ref="messageSender">
         <constructor-arg ref="messageFactory"/>
 
