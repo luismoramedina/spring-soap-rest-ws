@@ -11,7 +11,7 @@ import java.util.Arrays;
  * @author luis mora
  */
 @SpringBootApplication
-@ImportResource("classpath*:spring-webservices.xml")
+@ImportResource("classpath*:spring-*services.xml")
 public class App {
     public static void main(String[] args) {
 
